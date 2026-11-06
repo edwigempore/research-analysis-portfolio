@@ -52,7 +52,7 @@ def instacart_figure():
     ax.tick_params(axis='both', length=0)
     for spine in ax.spines.values():
         spine.set_visible(False)
-    fig.text(0.04, 0.025, 'Recreated from saved summary results; no analysis rerun. Final-test baskets remain unused.', fontsize=10, color='#334155')
+    fig.text(0.04, 0.025, 'Historical saved results · Main validation · Reserved final-test baskets not evaluated.', fontsize=10, color='#334155')
     fig.tight_layout(rect=(0.02, 0.07, 0.98, 1))
     target = ROOT / 'projects/instacart/figures/validation-ndcg.png'
     target.parent.mkdir(exist_ok=True)
