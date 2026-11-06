@@ -1,34 +1,24 @@
-# Provenance and packaging record
+# Provenance
 
-Prepared November 5, 2026 from files in the connected Google Drive.
+These are individual coursework projects by Edwige Mpore Rwagasana. See the [authorship and AI disclosure](README.md#authorship-and-ai-assistance).
 
-| Project | Source filename | Drive file ID | Evidence locations (original zero-based cell indices) |
-|---|---|---|---|
-| Instacart | Instacart_Project_code.ipynb | 1cHGme1rqsBq95GdqWBwBVxI0z7b6yiLv | 9: split counts; 20: lambda; 26: baselines; 29: bootstrap; 51: earlier validation; 64: item-item results; 67: sensitivity |
-| Telco | Edwige_Churn_Prediction_Assignment_1 (1).ipynb | 1rCOqoc0KWkoD-xt1c2WPhY4yZksgfX-G | 6: cleaning; 9: EDA; 15: split/scaling/GLM; 18: held-out results |
+| Project | Source notebook | Coursework context |
+|---|---|---|
+| Instacart | `Instacart_Project_code.ipynb` | Course checkpoints, validation counts, and Jaccard examples |
+| Telco | `Edwige_Churn_Prediction_Assignment_1 (1).ipynb` | BUAI 435 assignment template and modeling workflow |
 
-The author confirmed in conversation that both selected projects were individual work. The scope of provided course code and prior AI assistance remains unverified. Course prompts and comments remain visible rather than attributing the entire template to the author.
+## Presentation
 
-## Exact sharing edits
+Local `data/` paths replace the original Drive setup. Student identifiers, interactive display metadata, installation logs, and source-row previews were removed from sharing copies. The reports omit grading instructions and completed placeholders, use consistent headings, and explain evaluation metrics and selected GLM coefficients.
 
-- Added an introductory portfolio cell to each notebook.
-- Replaced Drive mounting/listing cells with local setup and explicit display imports.
-- Replaced input data paths with relative `data/` paths.
-- Removed the Instacart setup package-install command; requirements are supplied separately. An unused original `implicit` installation is not required by the retained analysis imports.
-- Removed student ID text, notebook/cell execution metadata, and interactive HTML/Colab output payloads. Preserved text and PNG analytical outputs.
-- Cleared original setup/loader outputs containing install logs, folder listings, or source-row previews.
-- Added READMEs, dependency lists, and this provenance record.
+Analytical code, model settings, and historical numerical outputs are preserved. The Instacart figure uses saved NDCG results; the Telco figure is the original saved ROC image. The presentation script regenerates these figures without executing the analyses:
 
-Analytical calculations, model choices, and numerical results were not changed. Historical outputs are retained and are not evidence of a new execution of these sharing copies. Dependencies were not pinned to invented versions.
+```bash
+python scripts/render_portfolio_figures.py
+```
 
-## Selection decisions
+## Data and verification
 
-The initial review inventoried the three discovered Colab Notebooks folders and followed the Instacart project folder. This is the accessible discovered scope, not a guarantee that every notebook anywhere in Drive was found. Class examples, incomplete/duplicate notebooks, and short exercises were not selected. An A/B landing-page analysis in `vibe_coding.ipynb` was reviewed but omitted pending author identification. Niagara files use a company dataset and are omitted pending sharing and contribution clarification. The zoo upgrade model is omitted pending provenance and contribution clarification. No instructor PDFs, raw data, or company outputs are distributed.
+The exact upstream dataset releases and redistribution rights are not established. Raw data are excluded; no redistribution license is asserted over source data or course material. Each project's data README lists the required filenames.
 
-## Verification
-
-Both selected source notebooks were parsed as JSON and inspected for code, saved outputs, and markdown. The sharing copies were checked for valid notebook structure and preservation of analysis cells apart from documented setup and identity edits. No fresh end-to-end execution, independent numerical replication, or validation of data redistribution rights was performed.
-
-## Repository upload checks
-
-During upload, added a missing cell ID to the introductory markdown cell in each notebook to satisfy notebook format 4.5 structure. All cell content, analysis code, and saved outputs remain unchanged from the supplied package. Checked JSON structure, cell IDs, Python syntax without execution, embedded PNG encoding, and local documentation references. No analyses were rerun.
+[VERIFICATION.md](VERIFICATION.md) distinguishes the historical notebook outputs from subsequent IPython execution and records the current structural checks. Instacart's reserved final-test baskets remain unused.
